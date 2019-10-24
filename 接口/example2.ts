@@ -1,11 +1,11 @@
-// 可选属性
+// 可选属性 这个有坑，仔细看我下面的注释
 interface Square {
   color: string,
   area: number
 }
 
 interface SquareConfig {
-  color?: string, // 这种 ? 定义的接口就是不是必需的
+  color?: string, // 这种 ? 定义的接口就是不是必需的。这个不是必需的意思是指，传入的对象类型要么符合 color 要么符合 width, 而不是必须两个都存在。
   width?: number
 }
 
@@ -27,7 +27,8 @@ function createSquare(config: SquareConfig): Square {
 }
 
 let mySquare = createSquare({
-  color: 'black'
+  color: 'black',
+  width: 100
 })
 
 console.log(mySquare)
@@ -41,7 +42,7 @@ interface Square {
 }
 
 interface SquareConfig {
-  color?: string, // 这种 ? 定义的接口就是不是必需的
+  color?: string, // 这种 ? 定义的接口就是不是必需的。
   width?: number
 }
 
@@ -64,7 +65,7 @@ function createSquare(config: SquareConfig): Square {
 }
 
 let mySquare = createSquare({
-  color: 'black'
+  color: 'red'
 })
 
 console.log(mySquare)

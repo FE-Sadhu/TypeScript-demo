@@ -1,3 +1,4 @@
+// 可选属性
 interface Square {
   color: string,
   area: number

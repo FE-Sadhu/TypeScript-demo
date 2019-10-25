@@ -1,4 +1,4 @@
-// 额外的类型检查 -> 也就是可选属性的坑，仔细看我下面注释
+// 额外的类型检查 -> 也就是可选属性的坑(当直接传入字面量对象时)，仔细看我下面注释
 interface SquareConfig {
   color?: string;
   width?: number;
@@ -45,3 +45,12 @@ interface SquareConfig {
   width?: number;
   [propName: string]: any;
 }
+
+// 3. 不直接传字面量对象，传变量。
+
+let myObj = {
+  colour: 'red', // 可选属性
+  width: 100
+}
+
+let mySquare = createSquare(myObj)

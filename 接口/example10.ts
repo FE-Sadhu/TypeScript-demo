@@ -29,3 +29,5 @@ let square2 = {} as Square2
 square2.color = 'blue'
 square2.sideLength = 10
 square2.penWidth = 5.0
+
+

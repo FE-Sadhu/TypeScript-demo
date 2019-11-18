@@ -79,7 +79,7 @@ function warnUser3(): void {
   return null // 没报错
 }
 
-// 申明一个 void 类型的变量没有申明大用，代表只能给变量赋予 undefined 和 null
+// 申明一个 void 类型的变量没有什么大用，代表只能给变量赋予 undefined 和 null
 let a: void = undefined
 
 // null 和 undefined

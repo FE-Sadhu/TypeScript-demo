@@ -77,7 +77,7 @@ function warnUser3() {
     console.log('This is my warning message');
     return null; // 没报错
 }
-// 申明一个 void 类型的变量没有申明大用，代表只能给变量赋予 undefined 和 null
+// 申明一个 void 类型的变量没有什么大用，代表只能给变量赋予 undefined 和 null
 var a = undefined;
 // null 和 undefined
 // 1. 在 ts 里面， undefined 和 null 和 void 一样，没有多大用
@@ -114,3 +114,12 @@ create(function a() { });
 // create('a') // 报错
 // create(true) // 报错
 // create(undefined) // 报错
+// 类型断言例子
+// 使用方法一 -> 尖括号 <>
+var someValue = 'This is some value';
+var strLength1 = someValue.length;
+console.log(strLength1);
+var strLength = someValue.length;
+// 使用方法二 -> as 关键字
+var otherValue = 'This is other value';
+var otherLength = otherValue.length;

@@ -25,3 +25,8 @@ function getCounter(): Sadhu { // 返回值必须符合接口的约束
   counter.reset = function() {}
   return counter;
 }
+
+let c = getCounter();
+c(10);
+c.reset();
+c.interval = 2;

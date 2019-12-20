@@ -22,7 +22,7 @@
    (length: number, value: T): Array<T>;
  }
 
- let createArray1: CreateArrayFunc1<any>; // 一定注意，在使用泛型接口的时候，需要定义泛型的类型。
+ let createArray1: CreateArrayFunc1<any>; // 一定注意，在使用泛型接口的时候，需要定义泛型的类型。 因为使用了。
  createArray1 = function<T>(length: number, value: T): Array<T> {
    const result: T[] = [];
 

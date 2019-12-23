@@ -40,3 +40,7 @@ interface AAA {
   alert(s: string): string; // 输入 string ，输出必须 string
   alert(s: string, n: number): string;
 }
+
+/**
+ * 类的合并和接口的合并规则一致
+ */

@@ -78,3 +78,26 @@
     y: 1,
     z: 2
   }
+
+  /**
+   * 用接口来描述类也是可以的，不过描述的是实例属性和原型方法，而且不用签名属性也可无限添加其他属性
+   */
+  interface Test {
+    x: string
+    y: number
+    // [propName: string]: any
+
+    outer()
+  }
+
+  class ABC implements Test {
+    x = ''
+    y = 2
+    zzzz = {}
+    tyyytt = []
+
+
+    outer () {
+
+    }
+  }

@@ -13,5 +13,6 @@
 
  let tom1: Person = { // 自然也可以存在
    name: 'sadhu',
-   age: 21
+   age: 21,
+   gender: 'male' // 仍然不允许添加未定义的属性
  }
